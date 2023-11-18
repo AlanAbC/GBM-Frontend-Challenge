@@ -1,0 +1,35 @@
+.topHeader {
+  width: 100%;
+  background-color: #262626;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  .icon {
+    font-size: 5em;
+  }
+  h2 {
+    color: white;
+  }
+}
+.bottomContainer {
+  padding: 0em 6em 6em 6em;
+  justify-content: center;
+  display: flex;
+  .tableRow {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bottomContainer {
+    padding: 0.5em;
+    margin-bottom: 2em;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

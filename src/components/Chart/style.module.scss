@@ -1,0 +1,45 @@
+.chartContainer {
+  min-width: 700px;
+}
+.checkbox {
+  margin-top: 1.2em;
+
+  label {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+  }
+}
+.datePicker {
+  margin-bottom: 1.2em;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  .rangePicker {
+    margin-left: 1em;
+  }
+}
+.displayOption {
+  margin-top: 1.2em;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  .select {
+    margin-left: 1em;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chartContainer {
+    min-width: 100%;
+  }
+  .displayOption {
+    width: 100%;
+    .select {
+      margin-top: 1em;
+      margin-left: 0em;
+      min-width: 100%;
+    }
+  }
+}

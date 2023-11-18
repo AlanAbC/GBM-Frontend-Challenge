@@ -1,0 +1,41 @@
+.sidebar {
+  height: 100vh;
+  background-color: #262626;
+  .menu {
+    padding: 0px;
+    background-color: #262626;
+    :global(.ant-menu-item) {
+      padding-left: 10px !important;
+      font-size: 1.2em;
+      margin: 0px;
+      margin-bottom: 12px;
+      border-radius: 0px !important;
+    }
+    :global(.ant-menu-item-selected) {
+      background-color: black;
+      svg {
+        color: #00ce7a !important;
+      }
+    }
+  }
+  .title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 0.2em;
+    text-align: center;
+  }
+  .searchButton {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #444ee6;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}

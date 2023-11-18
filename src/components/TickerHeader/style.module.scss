@@ -1,0 +1,102 @@
+.topHeader {
+  width: 100%;
+  background-color: #262626;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+  * {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  .backButton {
+    width: fit-content;
+    padding-left: 0px;
+    margin-bottom: 1em;
+  }
+  .favoriteButton {
+    background-color: transparent;
+    margin: 0px;
+    margin-left: 1em;
+    &.favoriteChecked {
+      background-color: #6cb33f;
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label {
+      font-weight: 300;
+    }
+  }
+  .datePicker {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    width: 0;
+    position: absolute;
+  }
+  .pricesContainer {
+    border-right: 3px solid #444ee6;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .red {
+      color: #d15c54;
+    }
+    .green {
+      color: #6cb33f;
+    }
+    p {
+      font-size: 1em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      label {
+        font-weight: 300;
+      }
+    }
+  }
+}
+.skeleton {
+  width: 250px;
+  margin-bottom: 0px;
+  :global(.ant-skeleton-title) {
+    width: 100% !important;
+  }
+  :global(.ant-skeleton-paragraph) {
+    margin-block-start: 12px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topHeader {
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-bottom: 0em;
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.2em;
+    }
+    .favoriteButton {
+      width: 1em;
+    }
+    .pricesContainer {
+      border-right: none;
+      border-left: 3px solid #444ee6;
+      margin-top: 2em;
+      width: 100%;
+    }
+  }
+}
