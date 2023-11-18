@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# GBM Frontend Challenge
 
-First, run the development server:
+You can find a deployed version of the project on (https://gbm-frontend-challenge.vercel.app/)
 
+## How to run the project:
+
+- Clone or download the repository
+- Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
-
+- Run local development server
+``` bash
+npm run dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to run tests:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Run test command
+```bash
+npm run dev
+```
 
-## Learn More
+If you want to get testing coverge you can run: 
 
-To learn more about Next.js, take a look at the following resources:
+-- You need to have installed jest globaly to perform this command
+```bash
+npx run jest --coverage
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Or you can find opening index.html under 
+```bash
+coverage > Icov-report
+```
+## Browsers support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Google Chrome
+- Microsft Edge
+- Safari
+- Firefox
 
-## Deploy on Vercel
+## Mobile Support
+- Yes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Framework:
+
+- React
+- NextJS
+- React Query for state management
+- Typescript
+- Lightweight Charts(https://tradingview.github.io/lightweight-charts/)
+
+Authentication:
+
+- Fireabase Authentication Service
+
+DB used to store favorites:
+
+- Firebase firestore
+
+Styling and Design System:
+
+- Antd Design(https://ant.design/)
+- Sass
+- CSS modules
+
+Testing:
+
+- Jest
+- React Testing Library
