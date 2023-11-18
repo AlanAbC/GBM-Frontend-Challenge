@@ -48,6 +48,7 @@ Framework:
 
 - React
 - NextJS
+- React Query for state management
 - Typescript
 - Lightweight Charts(https://tradingview.github.io/lightweight-charts/)
 
