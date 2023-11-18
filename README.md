@@ -1,6 +1,8 @@
 
 # GBM Frontend Challenge
 
+You can find a deployed version of the project on (https://gbm-frontend-challenge.vercel.app/)
+
 ## How to run the project:
 
 - Clone or download the repository
