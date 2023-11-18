@@ -21,6 +21,7 @@ export const AuthContextProvider = ({
 }) => {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
   // Check if user is authenticated, redirect to login if not
   useEffect(() => {
@@ -36,10 +37,12 @@ export const AuthContextProvider = ({
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user.email);
+        setLoading(false);
       } else {
         setUser(null);
         localStorage.clear();
         router.replace("/login");
+        setLoading(false);
       }
     });
 
@@ -62,7 +65,7 @@ export const AuthContextProvider = ({
   // Provide the authentication context value to its consumers
   return (
     <AuthContext.Provider value={{ user, login, signup, logout }}>
-      {children}
+      {loading ? null : children}
     </AuthContext.Provider>
   );
 };
